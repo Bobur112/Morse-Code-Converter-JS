@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Morse Converter</title>
+    <base href=".">
+
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+   
+  </head>
+
+  <body>
+    <div class="container mt-4">
+      <div class="row page-header">
+        <div class="col-xs-12">
+          <h1>Morse Code Converter</h1>
+        </div>
+      </div>
+
+      <form class="form-horizontal">
+        <div class="form-group">
+          <label for="morse" class="control-label col-xs-1 mt-5 fs-2"
+            >Text</label
+          >
+
+          <div class="col-xs-11">
+            <input
+              type="text"
+              class="form-control mt-2 mb-4 input"
+              id="morse"
+              autocomplete="off"
+              placeholder="type your text ..."
+            />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="values" class="form-label fs-2">Morse Code</label>
+          <textarea class="form-control" id="values" rows="3"></textarea>
+        </div>
+      </form>
+    </div>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+  <!-- <script src="./morse.js"></script> -->
+</html>
